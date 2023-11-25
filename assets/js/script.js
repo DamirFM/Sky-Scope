@@ -7,10 +7,6 @@ let weatherDashboard = document.getElementById('weather-dashboard');
 
 let APIKey = 'bf1daa722e3406449e1e394a9300d503';
 
-
-// https://www.loc.gov/film-and-videos/?q=dog&fo=json
-
-
 function getApi () {
 let userInput = inputEl.value.trim();
 localStorage.setItem('user-input', userInput);
@@ -33,9 +29,9 @@ var img = document.createElement("img");
 img.src= "https://openweathermap.org/img/wn/"+data.weather[0].icon+"@2x.png";
 h3.appendChild(img);
 var pTemp = document.createElement("p");
-pTemp.textContent ="Temp: " + data.main.temp + " °C";
+pTemp.textContent = "Temp: " + data.main.temp + " °C";
 var pWind = document.createElement("p");
-pWind.textContent ="Wind: " + data.wind.speed + " MPH";
+pWind.textContent = "Wind: " + data.wind.speed + " MPH";
 let pHumidity = document.createElement("p");
 pHumidity.textContent = "Humidity: " + data.main.humidity + " %";
 weatherDashboard.appendChild(h3);
@@ -77,21 +73,19 @@ fetch(forecastURL)
   card_body.appendChild(img);
 
   let pTemp = document.createElement("p");
-  pTemp.textContent = data.list[i].main.temp + " °C";
+  pTemp.textContent = "Temp: " + data.list[i].main.temp + " °C";
   card_body.appendChild(pTemp);
 
   let pWind = document.createElement("p");
-  pWind.textContent = data.list[i].wind.speed + " MPH";
+  pWind.textContent = "Wind: " + data.list[i].wind.speed + " MPH";
   card_body.appendChild(pWind);
   let pHumidity = document.createElement("p");
-  pHumidity.textContent = data.list[i].main.humidity + " %";
+  pHumidity.textContent = "Humidity: " + data.list[i].main.humidity + " %";
   card_body.appendChild(pHumidity);
 
 
   }
 })
-
-
 }
 
 

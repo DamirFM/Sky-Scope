@@ -27,7 +27,9 @@ N/A
 For doing this job I used this helpful resources: 
 
 - https://coding-boot-camp.github.io/full-stack/apis/how-to-use-api-keys
-
+- https://cdnjs.com/libraries/dayjs
+- https://getbootstrap.com/docs/5.3/examples/jumbotron/
+- https://openweathermap.org/forecast5#5days
 
 ## License
 
