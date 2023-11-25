@@ -1,0 +1,22 @@
+:root {
+    --brown: #8295a8;
+    --tan: #f5e1d5;
+    --teal: #f50e0e;
+    --lightteal: #d5f5f5;
+    --light: #fffaf7;
+    --dark-blue: rgb(132, 53, 7);
+  }
+  
+  .custom-navbar {
+    background-image: linear-gradient(rgba(39, 91, 233, 0.598)0%,
+    rgba(66, 183, 194, 0.6) 100%);
+  }
+  
+  .nav-item a:hover {
+    color: var(--teal);
+  }
+  
+  #btn {
+
+    border-bottom: 3px solid gray;
+  }
