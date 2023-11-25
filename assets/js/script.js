@@ -23,9 +23,8 @@ fetch(requestUrl)
   return response.json();
 })
 .then(function (data) {
-    console.log(data);
-    // console.log(data.main.temp)
-    // console.log('Github Repo Issues \n----------');
+    console.log( data);
+
     weatherDashboard.textContent = "";
 var h3 = document.createElement("h3");
 var currentDate = dayjs.unix(data.dt).format(' (MM/DD/YYYY)');
@@ -54,7 +53,7 @@ fetch(forecastURL)
   console.log(data);
   forecast.textContent = "";
   for (let i = 6; i < data.list.length; i = i + 8) {
-
+    console.log(data.list[i].wind.speed);
   var col_2 = document.createElement("div");
   col_2.classList = 'col-2';
   
@@ -77,8 +76,16 @@ fetch(forecastURL)
   img.src = "https://openweathermap.org/img/wn/"+data.list[i].weather[0].icon+"@2x.png";
   card_body.appendChild(img);
 
-  console.log(data.list[i].main[i].temp)
-  
+  let pTemp = document.createElement("p");
+  pTemp.textContent = data.list[i].main.temp + " °C";
+  card_body.appendChild(pTemp);
+
+  let pWind = document.createElement("p");
+  pWind.textContent = data.list[i].wind.speed + " MPH";
+  card_body.appendChild(pWind);
+  let pHumidity = document.createElement("p");
+  pHumidity.textContent = data.list[i].main.humidity + " %";
+  card_body.appendChild(pHumidity);
 
 
   }
