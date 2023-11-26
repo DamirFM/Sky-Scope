@@ -35,3 +35,9 @@
     rgba(66, 183, 194, 0.6) 100%);
     border-radius: 30px;
   }
+
+.btn-pr{
+  color: #fffaf7;
+  background-color: grey;
+  
+}

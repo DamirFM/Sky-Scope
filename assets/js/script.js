@@ -2,6 +2,7 @@
 let fetchButton = document.getElementById('search');
 let inputEl = document.getElementById('user-input');
 let forecast = document.getElementById('forecast');
+let buttonGroup = document.getElementById('historyBar');
 
 let weatherDashboard = document.getElementById('weather-dashboard');
 
@@ -9,8 +10,19 @@ let APIKey = 'bf1daa722e3406449e1e394a9300d503';
 
 function getApi () {
 let userInput = inputEl.value.trim();
-localStorage.setItem('user-input', userInput);
-console.log(userInput);
+
+if (!userInput) {
+  alert('You need to fill out the City name!');
+  return;
+}
+buttonGroup.textContent = "";
+var btn = document.createElement("button");
+btn.textContent = userInput;
+btn.classList = 'btn-pr w-100';
+buttonGroup.appendChild(btn);
+
+
+
 let requestUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + userInput + "&appid=" + APIKey + "&units=metric";
 console.log(requestUrl);
 
@@ -84,9 +96,11 @@ fetch(forecastURL)
   card_body.appendChild(pHumidity);
 
 
-  }
-})
-}
+  };
+});
+
+
+};
 
 
 
