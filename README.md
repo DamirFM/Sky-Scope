@@ -1,9 +1,10 @@
-# Sky-Scope
+# Sky-Scope 🌤️
 
+Welcome to the 🌩️ Sky-Scope 🌧️
 
 ## Description
 
-
+The Sky-Scope is a web-based application that provides users with real-time weather information for cities worldwide. Utilizing the OpenWeatherMap API, this app enables users to search for specific cities and retrieve current weather conditions along with a 5-day forecast.
 
 ## Link of deployed application.
 
@@ -11,16 +12,18 @@ https://damirfm.github.io/Sky-Scope/
 
 ## Screenshots of application
 
-### Welcome screen
+### Welcome page
 
-![Alt text](./Screenshots/1.png "Current and Future tasks")
+![Alt text](./screenshots/1.png "Welcome page")
 
 
 N/A
 
 ## Usage
 
-
+- City Search: Users can enter the name of a city to fetch the current weather details.
+- Search History: The app maintains a search history, displaying a list of previously searched cities as clickable buttons for quick access.
+- Local Storage: Search history is stored locally, allowing users to revisit previously searched cities even after refreshing the page.
 
 ## Credits
 
