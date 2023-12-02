@@ -16,7 +16,6 @@ https://damirfm.github.io/Sky-Scope/
 
 ![Alt text](./screenshots/1.png "Welcome page")
 
-
 N/A
 
 ## Usage
