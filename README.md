@@ -8,8 +8,8 @@ The Sky-Scope is a web-based application that provides users with real-time weat
 
 ## Table of content
 
-- [Link](#Link of deployed application)
-- [Screenshots](#Screenshots of application)
+- [Link](#Link_of_deployed_application)
+- [Screenshots](#Screenshots_of_application)
 - [Usage](#Usage)
 - [Credits](#Credits)
 - [License](#License)
