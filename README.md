@@ -6,6 +6,14 @@ Welcome to the 🌩️Sky-Scope🌧️
 
 The Sky-Scope is a web-based application that provides users with real-time weather information for cities worldwide. Utilizing the OpenWeatherMap API, this app enables users to search for specific cities and retrieve current weather conditions along with a 5-day forecast.
 
+## Table of content
+
+- [Link of deployed application](#Link of deployed application)
+- [Screenshots of application](#Screenshots of application)
+- [Usage](#Usage)
+- [Credits](#Credits)
+- [License](#License)
+
 ## Link of deployed application.
 
 https://damirfm.github.io/Sky-Scope/
@@ -37,8 +45,9 @@ For doing this job I used this helpful resources:
 
 MIT License
 
-## Badges
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) 
 
+## Badges
 
 <img src="https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white)" /> 
 
