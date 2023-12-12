@@ -26,6 +26,7 @@ https://damirfm.github.io/Sky-Scope/
 
 N/A
 
+
 ## Usage
 
 - City Search: Users can enter the name of a city to fetch the current weather details.
